@@ -1,6 +1,6 @@
 # MicroServiceTeammate
 
-==How to programmatically request data from the microservice==
+# How to programmatically request data from the microservice
 
 To request data from the microservice, make an HTTP POST call to the /validate_csv endpoint. The request should specify the path to the CSV file that requires validation.
 
@@ -17,16 +17,16 @@ Request Body: A JSON object with the key file_path and the value as the path of 
 --Example Request--
 import requests
 
-# Define the URL and the payload
+// Define the URL and the payload
 url = 'http://127.0.0.1:5000/validate_csv'
 payload = {
     "file_path": "test.csv"
 }
 
-# Make the POST request
+// Make the POST request
 response = requests.post(url, json=payload)
 
-# Print the response
+// Print the response
 print(response.json())
 
 --Instructions for Requesting--
@@ -39,7 +39,7 @@ Save your CSV file to the desired location and adjust the file path in the paylo
 
 Use the example script above to send a request to the microservice.
 
-==How to Programmatically Receive Data from the Microservice==
+# How to Programmatically Receive Data from the Microservice
 
 --Response Format--
 
